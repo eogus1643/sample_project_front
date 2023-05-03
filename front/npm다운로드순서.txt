@@ -1,0 +1,7 @@
+npm install
+npm install --save axios
+npm install --save xlsx
+npm i vue-chartjs chart.js
+npm install chartjs-plugin-zoom
+npm install --save moment
+npm install -S vue-sweetalert2

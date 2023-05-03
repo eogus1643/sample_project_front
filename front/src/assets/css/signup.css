@@ -1,0 +1,85 @@
+
+.top-table tr td:last-child {
+    background-color: #1a1a1a00;
+  }
+  
+  .top-table tr th {
+    color: #888888;
+  }
+  
+  input, password, select {
+    float:left;
+  }
+  
+  input[type=text] {
+    width: 140px;
+    color: #fff;
+  }
+  
+  input[class=signupText], input[type=password] {
+    width: 160px;;
+    color: #fff;
+  }
+  
+  select {
+    height: 36px;
+    color: #fff;
+  }
+  
+  input[class="phone-number"] {
+    width: 175px;
+  }
+  
+  select[class=email] {
+    width:70px;
+  }
+  
+  .checkId {
+    float: left;
+    height: 30px;
+    margin: 3px auto auto 5px;
+  }
+  
+  .id-flex-conrainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .top-table input[type=text]:focus {
+      color: #fff;
+      border: 1px solid #e35b0a
+  }
+  
+  .btn-group {
+    max-width: 1200px;
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .btn-group button {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    margin: 5px 5px 5px 5px;
+  }
+  
+  .btnBack {
+    background-color: #303955;
+  }
+  
+  .btnSignup {
+    background-color: #773f3f;
+  }
+  
+  .btn-smaill-darkolivegreen {
+    background-color: darkolivegreen;
+  }
+  
+  .btnPrimary:hover {
+    background-color: #89451d;
+    color: #fff
+  }

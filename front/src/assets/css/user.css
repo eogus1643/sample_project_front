@@ -1,0 +1,223 @@
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 600px;
+  height: 56px;
+  background-color: #fff;
+}
+
+.top-table td {
+  height: 48px;
+}
+.top-table .table-right tbody td:nth-child(2) {
+  padding: 2px 8px;
+}
+
+button {
+  font-size: 15px;
+  color: #979797;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  height: 100%;
+  min-height: 34px;
+  color: rgba(133, 136, 150, 0.5);
+  text-align: left;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background-color: #f2f2f2;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+.dropdown-toggle .up-icon {
+  display: none;
+  transition: 200ms ease;
+  color: #2f2f2f;
+}
+.dropdown-toggle .down-icon {
+  display: block;
+  color: #2f2f2f;
+}
+
+.dropdown-toggle.selected {
+  color: #3f4150;
+  border-color: rgb(224, 226, 231);
+}
+
+.dropdown-toggle:active {
+  border-color: rgb(224, 226, 231);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: border-color 200ms ease-in, padding 200ms ease-in,
+    max-height 200ms ease-in, box-shadow 200ms ease-in;
+  z-index: 10;
+}
+
+.dropdown-item button {
+  color: #2f2f2f;
+}
+
+.dropdown-menu.show {
+  padding: 8px 0;
+  max-height: 326px;
+  border-color: rgba(224, 226, 231, 0.5);
+  box-shadow: 0 4px 9px 0 rgba(63, 65, 80, 0.1);
+}
+
+.dropdown-option {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  line-height: 44px;
+  text-align: left;
+}
+
+.dropdown-option:hover {
+  background-color: #f8f9fa;
+}
+
+.userdetail-table {
+  display: flex;
+  width: 100%;
+  padding-bottom: 18px;
+}
+.userdetail-table .user-info {
+  padding-bottom: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.userdetail-table table {
+  border: 1px solid #bebebe;
+}
+.userdetail-table input::placeholder {
+  color: #bebebe;
+  font-size: 14px;
+}
+.userdetail-table tr {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 100%;
+  border-bottom: 1px solid #bebebe;
+}
+.userdetail-table tr .control-radio {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: auto 0;
+}
+.userdetail-table tr:last-child {
+  border-bottom: 0;
+}
+.userdetail-table td {
+  display: flex;
+  min-height: 46px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 12px;
+}
+.userdetail-table td:first-child {
+  border-right: 1px solid #bebebe;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 17px;
+}
+.userdetail-table td:last-child {
+  background-color: #ffffff;
+}
+.userdetail-table .control-value label {
+  height: 30px;
+  padding-right: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+  max-width: 160px;
+  min-width: 80px;
+}
+
+.remote-control {
+  width: 100%;
+}
+.remote-control td {
+  width: 100%;
+}
+
+span {
+  vertical-align: middle;
+}
+
+[type=radio] {
+  vertical-align: middle;
+  appearance: none;
+  border: max(1px, 0.1em) solid #bebebe;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transition: border 0.2s ease-in-out;
+  margin-right: 2px;
+}
+
+[type=radio]:checked {
+  border: 0.7em solid #e35b0a;
+}
+
+[type=radio]:hover {
+  box-shadow: 0 0 0 max(1px, 0.1em) #bebebe;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+[type=radio]:disabled {
+  background-color: #bebebe;
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btnbox {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+button > a {
+  color: #ffffff;
+}
+
+.revise-text > input::placeholder {
+  color: #1a1a1a;
+}/*# sourceMappingURL=user.css.map */
