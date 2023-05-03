@@ -6,6 +6,8 @@ COPY package*.json .
 RUN npm install
 COPY . .
 RUN npm run build
+RUN mkdir -p /var/cache/nginx/client_temp
+RUN chmod +x /var/cache/nginx/client_temp
 
 FROM nginx:stable-alpine as production-stage
 COPY --from=build-stage /app/front/dist /usr/share/nginx/html
