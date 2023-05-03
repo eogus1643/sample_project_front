@@ -21,6 +21,7 @@ RUN npm run build
 # CMD ["npm", "run", "serve"]
 
 # # production stage
+RUN chmod +x /var/cache/nginx/client_temp
 FROM nginx:stable-alpine as production-stage
 COPY --from=build-stage /app/front/dist /usr/share/nginx/html
 EXPOSE 8075
