@@ -11,6 +11,7 @@ RUN npm install chartjs-plugin-zoom
 RUN npm install --save moment
 RUN npm install -S vue-sweetalert2
 COPY . .
+RUN chmod +x /app/front
 RUN npm run build
 
 
